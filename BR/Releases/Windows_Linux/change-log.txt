@@ -1,0 +1,170 @@
+# InvoiCy Framework v01.43.00 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+
+1. SAT: Tag <xMotivo> do grupo infStatus informa descrição de erro quando ocorre falha de comunicação com o SAT;
+2. MFE: Revisão de tipo, permite envio para serviço aimportacao em caso de erro de emissão;
+3. MFE CFe: Definição de layout padrão, revisada;
+4. Log descrevendo estimativa de tempo em contingência;
+5. Tratamento dinâmico para fonte do calculo: De Olho no Imposto;
+6. Adequação de NT's 2019.001 v.1.61 e 2023.004 v1.10;
+7. Pequenos ajustes referentes ao tratamento da emissão em contingência forçada;
+8. Adicionado método InvoiCyFramework_EmiteDocumentoJSON para envio de documentos em formato JSON;
+9. Homologado o SAT CondrolID;
+
+# InvoiCy Framework v01.42.05 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Correção no tratamento de envio do evento de Inutilização;
+
+# InvoiCy Framework v01.42.04 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Implementação de retentativas de abertura da porta serial no processo de detecção automática de impressoras;
+
+# InvoiCy Framework v01.42.03 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Implementação de melhorias no processo de detecção automática de impressoras;
+
+# InvoiCy Framework v01.42.02 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Ajuste para que o envio de documentos pendentes não suba os descartes e não tente enviar todos os documentos que estão em pendência;
+
+# InvoiCy Framework v01.42.01 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. MFE/SAT: Revisão para definição de Layout de arquivo CFe
+
+# InvoiCy Framework v01.42.00 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Implementado o suporte à emissão de documentos através do MFE - Módulo 
+   Fiscal Eletrônico para o estado do Ceará;
+2. Melhorias no tratamento de todas as impressoras homologadas. Adicionado
+   suporte ao sub-parâmetro "TEXTO" na configuração de IMPRESSORA_CANAL para 
+   que seja utilizado conjunto de comandos ESC/POS nativo das impressoras e
+   e a fonte interna da impressora;
+
+# InvoiCy Framework v01.41.03 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Melhorias no tratamento da impressora Daruma DR700 e DR800;
+2. O Framework passa a imprimir a inscrição Estadual junto aos dados do emitente;
+3. Correção na impressão do endereço do emitente - adicionado espaço entre o 
+   número/complemento e o bairro;
+
+# InvoiCy Framework v01.41.02 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Homologação da impressora Daruma DR700;
+
+# InvoiCy Framework v01.41.01 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Correção na implementação de redução dos espaços em branco nos recibos
+   impressos: o FW passa a tratar de forma diferenciada as DANFE e os recibos
+   texto, verificando os parâmetros LIMITE_ESPACAMENTO_IMPRESSAO_DA e
+   LIMITE_ESPACAMENTO_IMPRESSAO_TEXTO respectivamente. Caso estes parâmetros
+   não sejam definidos pelo AC o FW utilizará os limites de 12 pixels nos
+   documentos auxiliares (DA) e 999 nos recibos texto;
+2. Correção no processamento de configuração do diretório de trabalho;
+
+# InvoiCy Framework v01.41.00 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Correção no método InvoiCyFramework_ObtemUltimoSequencialNFCe;
+2. Implementação de parâmetro para configurar se o CPF do destinatário será 
+   impresso integral ou de forma mascarada na DANFE. Esta opção pode ser 
+   configurada no InvoiCy ou também informada através dos parâmetros adicionais 
+   da emissão, através da tag XML ImprimeCPFDestMascarado;
+3. Implementação melhorias na emissão de NFSe;
+4. Implementado a possibilidade de impressão da DANFE através do uso de comandos 
+   ESC/POS para impressoras Sweda;
+5. Adicionada a possibilidade de envio de até 5 comprovantes adicionais (TEF, 
+   Confissão de dívida, etc) para impressão após a DANFE. Estes comprovandes podem 
+   ser enviados como parâmetros adicionais da emissão, através das tag XML 
+   DocumentoTexto1 até DocumentoTexto5;
+
+# InvoiCy Framework v01.40.00 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Ajuste nos tamanhos das áreas de impressão do QRcode (QRcode à esquerda) 
+   para reduzir o espaço em branco após a impressão do mesmo;
+
+# InvoiCy Framework v01.39.00 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Alterado o processo de geração do número de sessão da comunicação com o SAT;
+2. Adicionada tratamento para contingência forçada configurada no InvoiCy;
+
+# InvoiCy Framework v01.38.07 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Adicionado novo parâmetro de emissão (AguardarFinalizarImpressaoRecibo) para 
+   configurar se o Framework deve aguardar a finalização da impressão antes de 
+   devolver o retorno da emissão para o AC;
+2. Adicionada a leitura da versão de layout suportada pelo dispositivo SAT que 
+   estiver plugado no Framework;
+3. Passa a gerar o XML do CFe SAT em layout condizente com a versão suportada 
+   pelo dispositivo SAT;
+4. Passa a enviar documentos pendentes um a um;
+5. Adicionado envio de descarte do documento original ao converter para emissão 
+   em contingência no SAT;
+6. Adicionada a possibilidade de o Framework realizar mais tentativas de 
+   comunicação com o InvoiCy quando a comunicação não receber uma resposta. 
+   Por padrão o Framework faz uma tentativa de comunicação. Se o parâmetro 
+   "NUMERO_TENTATIVAS_ENVIO" estiver definido com um valor entre 2 e 5, então 
+   o Framework tentará comunicar este número de vezes;
+
+# InvoiCy Framework v01.38.06 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Ajuste para imprimir o texto de mensagem promocional abaixo do QR quando 
+   utilizada configuração de impressão do QRcode à esquerda e impressão por imagem,
+   ao emitir em contingência;
+
+# InvoiCy Framework v01.38.05 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Ajuste para imprimir o texto de mensagem promocional abaixo do QR quando 
+   utilizada configuração de impressão do QRcode à esquerda e impressão por imagem;
+
+# InvoiCy Framework v01.38.04 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1. Ajuste para imprimir o texto de mensagem promocional abaixo do QR quando 
+   utilizada configuração de impressão do QRcode à esquerda e impressão por imagem;
+
+# InvoiCy Framework v01.38.03 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1.  Ajuste no tratamento para obter CNPJ do emissor e tipo de ambiente do XML de envio de eventos;
+
+# InvoiCy Framework v01.38.02 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1.  Correções: liberações de memória que estavam faltando;
+
+2.  Adicionando gravação de parâmetros de configuração do SAT no banco de dados;
+
+3.  Adicionando tratamento de parâmetros de configuração de impressão obtidos 
+	na consulta cadastro;
+
+# InvoiCy Framework v01.38.01 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1.  Implementada a descoberta automática da porta serial e modelo das impressoras
+	térmicas conectadas;
+
+2.  Adicionando no log informação sobre o nome do arquivo passado para os métodos
+	que movem arquivos para a pasta \DocPendentes e \DocPendentes\Erro;
+
+3.  Passa a carregar os dados da empresa e parâmetros, de acordo com o cnpj da 
+	empresa e tipo de ambiente indicado no xml de entrada, fazendo isso em todos 
+	os aspectos do processo de emissão;
+
+4.	Compatibilidade de migração para a versão 1.38.xx - obtém o sequencial controlado
+	pelo Framework que está gravado no windows registry e copia para o banco de dados;
+
+5.	Compatibilidade de migração para a versão 1.38.xx - obtém o diretório configurado
+	pelo Framework que está gravado no windows registry e copia para o banco de dados;
+
+
+
+# InvoiCy Framework v01.38.00 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+1.  Passa a gravar os seus parâmetros de configuração, parâmetros baixados do 
+	InvoiCy e controle de numeração em arquivos SQLite;
+
+2.  Passa a armazenar os arquivos de uso interno do Framework na pasta 
+	"%ALLUSERSPROFILE%\InvoiCyFW" (por padrão %ALLUSERSPROFILE%=C:\ProgramData) 
+	nas versões Windows e "/usr/bin/InvoiCyFW/" nas versões Linux;
+
+3.  Passa a armazenar/buscar os arquivos de log, documentos pendentes de 
+	sincronização, logotipo, layout específico, etc. na pasta "%PUBLIC%\InvoiCyFW" 
+	(por padrão %PUBLIC%=C:\Users\Public) nas versões Windows e 
+	"/usr/bin/InvoiCyFW/" nas versões Linux;
+
+
