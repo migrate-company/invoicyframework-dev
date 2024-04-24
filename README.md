@@ -11,7 +11,7 @@ O InvoiCy Framework é indicado para todos os tipos de Aplicativos Comerciais, e
 O InvoiCy Framework está disponível para sistemas Windows 32 e 64 bits (DLL), Linux (Shared Object), Java (JAR) e Android (AAR).
 
 ## Manual de integração
-[Acessar o manual de integração](https://pages.github.com/)
+[Acessar o manual de integração](BR/Documentos)
 
 ## Códigos fonte de exemplo
 Estão disponíveis códigos fonte escritos em [C#](https://pages.github.com/), [VB](https://pages.github.com/), [Java](https://pages.github.com/), [Delphi](https://pages.github.com/)
