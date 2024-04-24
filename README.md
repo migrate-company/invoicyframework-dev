@@ -15,7 +15,8 @@ O InvoiCy Framework está disponível para sistemas Windows 32 e 64 bits (DLL), 
 
 ## Pacotes de bibliotecas
 [Windows/Linux](BR/Releases/Windows_Linux)
-[Android]()
+
+[Android](BR/Releases/Android)
 
 ## Códigos fonte de exemplo
 Estão disponíveis códigos fonte escritos em [C#](BR/Exemplos), [VB](BR/Exemplos), [Java](BR/Exemplos), [Delphi](BR/Exemplos)
