@@ -1,3 +1,5 @@
+![Migrate](https://migrate.info/wp-content/uploads/2022/01/Marca_mini.png.webp)
+
 # InvoiCy Framework para Desenvolvedores
 Este é o repositório de materiais do InvoiCy Framework. Aqui você encontrará manuais, exemplos e todas as releases do Framework.
 
@@ -10,13 +12,35 @@ O InvoiCy Framework é indicado para todos os tipos de Aplicativos Comerciais, e
 
 O InvoiCy Framework está disponível para sistemas Windows 32 e 64 bits (DLL), Linux (Shared Object), Java (JAR) e Android (AAR).
 
+
 ## Manual de integração
 [Acessar o manual de integração](BR/Documentos)
+
 
 ## Pacotes de bibliotecas
 [Windows/Linux](BR/Releases/Windows_Linux)
 
 [Android](BR/Releases/Android)
 
+
 ## Códigos fonte de exemplo
 Estão disponíveis códigos fonte escritos em [C#](BR/Exemplos), [VB](BR/Exemplos), [Java](BR/Exemplos), [Delphi](BR/Exemplos)
+
+
+## Mais informações ...
+
+[Geração do XML para emissão no layout InvoiCy](https://desenvolvedores.migrate.info/)
+
+[Geração do JSON para emissão](https://desenvolvedores.migrate.info/)
+
+
+## Site do InvoiCy Framework
+
+[InvoiCy Framework](https://migrate.info/invoicy-framework-emissao-ultra-rapida/)
+
+
+## Suporte
+
+[Entre em contato](https://desenvolvedores.migrate.info/)
+
+
