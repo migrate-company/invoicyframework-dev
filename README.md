@@ -16,6 +16,8 @@ O InvoiCy Framework está disponível para sistemas Windows 32 e 64 bits (DLL), 
 ## Manual de integração
 [Acessar o manual de integração](BR/Documentos)
 
+[Download do manual de integração](https://github.com/migrate-company/invoicyframework-dev/blob/main/BR/Documentos/Manual%20InvoiCy%20Framework%20V1.6.pdf)
+
 
 ## Pacotes de bibliotecas
 [Windows/Linux](BR/Releases/Windows_Linux)
