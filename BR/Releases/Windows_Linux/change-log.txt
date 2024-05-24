@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.44.01 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+
+1. Correção de exceptions no Linux;
+
 # InvoiCy Framework v01.44.00 - correções e novas funcionalidades:
 -------------------------------------------------------------------------
 
