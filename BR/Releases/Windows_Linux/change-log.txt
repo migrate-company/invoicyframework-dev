@@ -1,3 +1,12 @@
+# InvoiCy Framework v01.44.00 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+
+1. Adicionado gerenciamento para documentos indefinidos presentes na pasta DocPendentes;
+2. Implementada rotina para conversão de XML layout CFe-SAT para layout Sefaz;
+3. Correção no tratamento da configuração da pasta para gravação de logs;
+4. Criação do recurso de rodar uma thread que atende à solicitações externas de emissão de CF-e SAT;
+5. Adicionadas validações do XML de emissão relativas à NT 2020.006;
+
 # InvoiCy Framework v01.43.00 - correções e novas funcionalidades:
 -------------------------------------------------------------------------
 
