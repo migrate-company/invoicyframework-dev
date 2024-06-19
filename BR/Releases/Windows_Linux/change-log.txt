@@ -1,3 +1,11 @@
+# InvoiCy Framework v01.44.02 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+
+1. Diversos ajustes para diminuir o tempo de resposta quando não conseguir comunicar 
+   com impressora em rede ou serial/usb; 
+2. Correções para melhorar utilização das impressoras Daruma; 
+3. Adição de gravação de mais logs ao executar a consulta de cadastro;
+
 # InvoiCy Framework v01.44.01 - correções e novas funcionalidades:
 -------------------------------------------------------------------------
 
