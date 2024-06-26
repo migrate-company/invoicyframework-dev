@@ -1,10 +1,16 @@
-# InvoiCy Framework v01.44.02 - correções e novas funcionalidades:
+# InvoiCy Framework v01.45.00 - correções e novas funcionalidades:
 -------------------------------------------------------------------------
 
-1. Diversos ajustes para diminuir o tempo de resposta quando não conseguir comunicar 
-   com impressora em rede ou serial/usb; 
-2. Correções para melhorar utilização das impressoras Daruma; 
-3. Adição de gravação de mais logs ao executar a consulta de cadastro;
+1. Melhorias na utilização de impressoras Daruma;
+2. Melhorias no tempo de resposta de conexão com impressoras USB e de rede, em caso 
+   de falhas de conexão;
+3. Melhorias na conversão de XML layout CFe-SAT para layout Sefaz;
+4. Adicionada a possibilidade de o Framework retornar o Bitmap da DANFE NFCe da NFCe 
+   autorizada ou emitida em contingência;
+5. Implementação NT2024.002 - Atualização da Tabela de Meios de Pagamento; 
+6. Adicionado novo parâmetro de emissão "NaoImprimeEnderecoDest" para indicar que o 
+   endereço do destinatário não deve ser impresso;
+7. Outras correções menos importantes;
 
 # InvoiCy Framework v01.44.01 - correções e novas funcionalidades:
 -------------------------------------------------------------------------
