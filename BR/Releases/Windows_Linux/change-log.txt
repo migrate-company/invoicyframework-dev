@@ -1,3 +1,9 @@
+# InvoiCy Framework v01.45.01 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+
+1. Correção na montagem do grupo card: o Framework estava copiando indevidamente o 
+   grupo card de uma forma de pagamento para outras;
+
 # InvoiCy Framework v01.45.00 - correções e novas funcionalidades:
 -------------------------------------------------------------------------
 
