@@ -1,3 +1,12 @@
+# InvoiCy Framework v01.45.02 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+
+1. Implementação da impressão de bitmap via impressão genérica;
+2. Otimização nos métodos de obtenção de parâmetros de impressora para que retorne
+   mais rápido caso não consiga comunicar com a impressora; 
+3. Passa devolver um retorno default se falhar a comunicação com a impressora para 
+   obter o status;
+
 # InvoiCy Framework v01.45.01 - correções e novas funcionalidades:
 -------------------------------------------------------------------------
 
