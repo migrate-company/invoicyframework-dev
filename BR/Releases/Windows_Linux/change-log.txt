@@ -1,3 +1,9 @@
+# InvoiCy Framework v01.45.03 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+
+1. Ajuste nas rotinas de impressão de bitmap: passa a truncar os 576 pixels centrais 
+   horizontais das imagens se elas tiverem mais de 576 pixels;
+
 # InvoiCy Framework v01.45.02 - correções e novas funcionalidades:
 -------------------------------------------------------------------------
 
