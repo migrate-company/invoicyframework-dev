@@ -1,23 +1,34 @@
-# InvoiCy Framework v01.45.03 - correções e novas funcionalidades:
+# InvoiCy Framework v01.46.00 - correÃ§Ãµes e novas funcionalidades:
 -------------------------------------------------------------------------
 
-1. Ajuste nas rotinas de impressão de bitmap: passa a truncar os 576 pixels centrais 
+1. Adicionada a possibilidade de configurar uma pasta para armazenar os documentos 
+   pendentes de sincronizaÃ§Ã£o (DocPendentes) atravÃ©s do parÃ¢metro DIRETORIO_REMOTO_CONTINGENCIA;
+2. Ajuste para o FW setar localizaÃ§Ã£o inglesa e UTF-8 para tratamentos de nÃºmeros e pt_BR e UTF-8 
+   para os demais recursos (idioma, data, etc.);
+3. Ajuste na rotina de criaÃ§Ã£o do comando de bitmap, passa a truncar os 576 pixels centrais de 
+   imagem que tiver largura maior do que 576 pixels;
+
+# InvoiCy Framework v01.45.03 - correÃ§Ãµes e novas funcionalidades:
+-------------------------------------------------------------------------
+
+1. Ajuste nas rotinas de impress?de bitmap: passa a truncar os 576 pixels centrais 
    horizontais das imagens se elas tiverem mais de 576 pixels;
 
-# InvoiCy Framework v01.45.02 - correções e novas funcionalidades:
+# InvoiCy Framework v01.45.02 - correÃ§Ãµes e novas funcionalidades:
 -------------------------------------------------------------------------
 
-1. Implementação da impressão de bitmap via impressão genérica;
-2. Otimização nos métodos de obtenção de parâmetros de impressora para que retorne
-   mais rápido caso não consiga comunicar com a impressora; 
-3. Passa devolver um retorno default se falhar a comunicação com a impressora para 
+1. Implementa? da impress?de bitmap via impress?gen?ca;
+2. Otimiza? nos m?dos de obten? de par?tros de impressora para que retorne
+   mais r?do caso n?consiga comunicar com a impressora; 
+3. Passa devolver um retorno default se falhar a comunica? com a impressora para 
    obter o status;
 
-# InvoiCy Framework v01.45.01 - correções e novas funcionalidades:
+# InvoiCy Framework v01.45.01 - correÃ§Ãµes e novas funcionalidades:
 -------------------------------------------------------------------------
 
-1. Correção na montagem do grupo card: o Framework estava copiando indevidamente o 
+1. Corre? na montagem do grupo card: o Framework estava copiando indevidamente o 
    grupo card de uma forma de pagamento para outras;
+
 
 # InvoiCy Framework v01.45.00 - correções e novas funcionalidades:
 -------------------------------------------------------------------------
