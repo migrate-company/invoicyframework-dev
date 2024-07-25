@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.46.01 - correções e novas funcionalidades:
+-------------------------------------------------------------------------
+
+1. Tolerância de 5min para retorno 212
+
 # InvoiCy Framework v01.46.00 - correÃ§Ãµes e novas funcionalidades:
 -------------------------------------------------------------------------
 
