@@ -1,9 +1,14 @@
-# InvoiCy Framework v01.46.02 - correções e novas funcionalidades:
+# InvoiCy Framework v01.46.03
+-------------------------------------------------------------------------
+
+1. Revisão: Processo de reimpressão de documentos emitidos em contingência
+
+# InvoiCy Framework v01.46.02
 -------------------------------------------------------------------------
 
 1. Processo de inutilização "assíncrono", requer aguardar resposta
 
-# InvoiCy Framework v01.46.01 - correções e novas funcionalidades:
+# InvoiCy Framework v01.46.01
 -------------------------------------------------------------------------
 
 1. Tolerância de 5min para retorno 212
