@@ -1,3 +1,13 @@
+# InvoiCy Framework v01.46.04
+-------------------------------------------------------------------------
+
+1. Criado novo parâmetro "VALIDAR_REJEICAO_212" para que o AC possa definir se o Framework deve 
+   validar NFCe quanto à rejeição 212;
+2. Implementado o retorno do nome do fabricante da impressora ao utilizar o identificador 5 
+   do método InvoiCyFramework_ObtemParametro;
+3. O driver genérico de impressora (impressora não identificada) passa a verificar se a impressora
+   está em modo USB Printer Class, e neste caso alternar para Vendor class;
+
 # InvoiCy Framework v01.46.03
 -------------------------------------------------------------------------
 
