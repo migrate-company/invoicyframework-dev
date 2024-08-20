@@ -1,3 +1,12 @@
+# InvoiCy Framework v01.46.05
+-------------------------------------------------------------------------
+
+1. Correção: o Framework passa a utilizar efetivamente uma nova configuração de impressora 
+   sem necessidade de reiniciar;
+2. Correção no tratamento da configuração de pasta remota de documentos pendentes;
+3. Correção: aguarda a finalização da transmissão de dados antes de fechar a porta serial,
+   ao comunicar com dispositivo serial no linux;
+
 # InvoiCy Framework v01.46.04
 -------------------------------------------------------------------------
 
