@@ -1,3 +1,10 @@
+# InvoiCy Framework v01.46.06
+-------------------------------------------------------------------------
+
+1. Melhoria: o Framework passa a enviar o comando de impressão de bitmap de forma particionada para 
+   a impressora Epson pois algumas versões da impressora não suportam uma impressão grande (mais de 
+   2000 linhas) num comando único;
+   
 # InvoiCy Framework v01.46.05
 -------------------------------------------------------------------------
 
