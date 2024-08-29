@@ -1,3 +1,9 @@
+# InvoiCy Framework v01.46.07
+-------------------------------------------------------------------------
+
+1. Melhoria: no tratamento de comandos de leitura de status enviados para as impressoras, caso 
+   um comando falhar o FW tenta retransmitir;
+   
 # InvoiCy Framework v01.46.06
 -------------------------------------------------------------------------
 
