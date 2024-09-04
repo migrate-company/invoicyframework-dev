@@ -1,3 +1,12 @@
+# InvoiCy Framework v01.46.08
+-------------------------------------------------------------------------
+
+1. Melhoria de estabilidade no tratamento de impressões e obtenção do status da impressora 
+   no cenário de múltiplas requisições simultâneas;
+2. Criados novos parâmetros IMPRIME_CPF_DEST_MASCARADO e NAO_IMPRIME_ENDERECO_DEST para permitir 
+   o controle da impressão de CFP mascarado e a não impressão do endereço do destinatário, tanto 
+   na impressão normal quanto na re-impressão;   
+   
 # InvoiCy Framework v01.46.07
 -------------------------------------------------------------------------
 
