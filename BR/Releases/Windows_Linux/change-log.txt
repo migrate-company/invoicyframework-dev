@@ -1,3 +1,9 @@
+# InvoiCy Framework v01.46.09
+-------------------------------------------------------------------------
+
+1. Aumento dos timeouts de espera por resposta da impressora de rede, considerando o cenário de 
+   uso de impressoras de rede compartilhadas entre PDVs;
+   
 # InvoiCy Framework v01.46.08
 -------------------------------------------------------------------------
 
