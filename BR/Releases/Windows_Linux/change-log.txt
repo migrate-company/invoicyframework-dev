@@ -1,3 +1,10 @@
+# InvoiCy Framework v01.46.10
+-------------------------------------------------------------------------
+
+1. Melhorias na gestão do arquivo de semáforo de envio e documentos pendentes;
+2. Removida a consulta de cadastro de empresa e validade do certificado em todas as chamadas 
+   de InvoiCyFramework_ObtemParametro - mantida apenas na obtenção da data de validade do certificado;
+   
 # InvoiCy Framework v01.46.09
 -------------------------------------------------------------------------
 
