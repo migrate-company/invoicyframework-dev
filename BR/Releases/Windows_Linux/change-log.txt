@@ -1,3 +1,11 @@
+# InvoiCy Framework v01.46.20
+-------------------------------------------------------------------------
+1. Implementação de uma fonte maior para impressão em modo bitmap;
+2. Adicionado método InvoiCyFramework_ConfiguraMFE na lista de métodos 
+   exportados no Framework Linux;
+3. O Framework passa a entrar em contingência ao receber o retorno 
+   Codigo 100, SitCodigo 108 e o campo DocXMLBase64 estiver vazio;
+
 # InvoiCy Framework v01.46.19
 -------------------------------------------------------------------------
 1. Adicionada gravação de mais logs nos módulos de acesso ao BD SQLite;
