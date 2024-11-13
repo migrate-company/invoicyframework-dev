@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.46.21
+-------------------------------------------------------------------------
+1. Implementação do método ConsultarStatusOperacionalMFE da biblioteca 
+   de MFE dos fabricantes no Framework Linux;
+
 # InvoiCy Framework v01.46.20
 -------------------------------------------------------------------------
 1. Implementação de uma fonte maior para impressão em modo bitmap;
