@@ -1,3 +1,9 @@
+# InvoiCy Framework v01.46.22
+-------------------------------------------------------------------------
+1. Adequação do tratamento para emissão de NFe;
+2. Adicionado tratamento de quebra de linhas na impressão dos dados 
+   de infCpl no recibo de CFe-MFE;
+
 # InvoiCy Framework v01.46.21
 -------------------------------------------------------------------------
 1. Implementação do método ConsultarStatusOperacionalMFE da biblioteca 
