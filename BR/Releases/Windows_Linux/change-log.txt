@@ -1,3 +1,9 @@
+# InvoiCy Framework v01.46.23
+-------------------------------------------------------------------------
+1. O framework passa a montar a tag cAdmC do CFe-SAT com o valor 999
+   caso o CNPJ informado no grupo DetPag não for encontrado na lista
+   de CNPJs das credenciadoras de cartão;
+
 # InvoiCy Framework v01.46.22
 -------------------------------------------------------------------------
 1. Adequação do tratamento para emissão de NFe;
