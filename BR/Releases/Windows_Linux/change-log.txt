@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.46.24
+-------------------------------------------------------------------------
+1. Adicionadas as formas de pagamento 15 até 19 e 90 ao layout de impressão
+   do recibo de CF-e MFE;
+
 # InvoiCy Framework v01.46.23
 -------------------------------------------------------------------------
 1. O framework passa a montar a tag cAdmC do CFe-SAT com o valor 999
