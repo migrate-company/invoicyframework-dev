@@ -1,3 +1,9 @@
+# InvoiCy Framework PY v01.02.03
+-------------------------------------------------------------------------
+1. Corrección en impresión de recibos, para imprimir correctamente 
+   caracteres acentuados;
+2. Tamaño de fuente de impresión de recibos aumentado;
+
 # InvoiCy Framework PY v01.02.02
 -------------------------------------------------------------------------
 1. Implementación de las Notas Técnicas 23, 21, 18, 16, 14, 13, 07, 06 e 05;
