@@ -1,3 +1,9 @@
+# InvoiCy Framework v01.46.25
+-------------------------------------------------------------------------
+1. Adicionado o identificador da impressora Print ID Touch na lista de 
+   impressoras homologadas. Por indicação do fabricante, a inpressora será 
+   tratada como uma Epson TM-T20;
+   
 # InvoiCy Framework v01.46.24
 -------------------------------------------------------------------------
 1. Adicionadas as formas de pagamento 15 até 19 e 90 ao layout de impressão
