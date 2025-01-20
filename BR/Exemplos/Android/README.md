@@ -1,6 +1,6 @@
 ![Migrate](https://migrate.info/wp-content/uploads/2022/01/Marca_mini.png.webp)
 
-# InvoicyFramework Android, para desenvolvedores
+# Invoicy Framework Android, para desenvolvedores
 Este Projeto utiliza a IDE Android Studio, para demonstrar o uso da biblioteca do InvoiCy Framework Android.
 
 
@@ -12,31 +12,52 @@ Este Projeto utiliza a IDE Android Studio, para demonstrar o uso da biblioteca d
 	. A classe Parametro, é um modelo como deverá inserir os parâmetros do emitente entre outros
 	parâmetros de configuração.
 
-Neste exemplo é demonstrado o uso da biblioteca InvoiCyFramework.aar, e também **"modelos"** para implementar as interfaces de log's e impressão utilizando recursos oferecidos pela classe PrintHelper.
+Neste exemplo também há implementação de **"modelos"** para as interfaces de log's e impressão, onde para esta última, foi utilizado recursos oferecidos pela classe PrintHelper.
 
-Recomendamos que dedique atenção para compreender o uso de modelos prospostos, em especial no arquivo Venda.java.
+Recomendamos que dedique atenção para compreender o uso dos modelos prospostos, em especial no arquivo Venda.java.
 
 São elas:
 
 1. Uso da biblioteca aar na pasta libs, atraves da classe InvoiCyFramework em Venda.java;
-2. Classe LogGer, que implementa o uso da interface LogIFW, 
-3. class Impressora, que implementa a interface InterfaceImpressora.
-4. O arquivo Parametro.java, possui algumas informações agrupadas referente ao dados do parceiro.
+2. Classe LogGer, que implementa o uso da interface LogIFW.
+
+   Vale lembrar que nenhum log será armazenado diretamente pelo InvoiCy Framework, sendo requisito a implementação desta interface e o armazenamento destas informações de acordo com o seu projeto.
+
+   Como sugestão, poderá ser utilizado o SQLite como recurso para persistir estas informações pelo prazo desejado, controlando a data em que são gravados.
+
+3. Classe Impressora, que implementa a interface InterfaceImpressora.
+
+   ### Observação:
+
+   A forma como este projeto trata a impressão, é apenas um modelo para conhecimento.
+
+   O InvoiCyFramework possibilita imprimir em:
+
+   1.	Dispositivos que possuêm impressora integrada
+   2.	Impressora ethernet, informando o endereço IP
+   3.	Ou através do modelo exemplificado neste projeto:
+
+		Utilizando os recursos oferecidos pela classe PrintHelper.
+
+4. No arquivo Parametro.java, encontrará um modelo para informações agrupadas referente aos dados do parceiro.
 
 	Neste arquivo observe o método LeituraDeConfiguracao da classe Parametro;
 
-	Este método contém dados como emitente.CNPJ,emitente.chaveAcesso, emitente.chaveParceiro, emitente.mod, emitente.serie, emitente.nNF entre outros, onde deverá inserir suas informações de parceiro para iniciar testes.
+	Este método contém dados como:
 
+   	. emitente.CNPJ
+   
+	. emitente.chaveAcesso
+   
+   	. emitente.chaveParceiro
+   
+   	. emitente.mod
+   
+   	. emitente.serie
+   
+   	. emitente.nNF entre outros;
 
-## Observação:
-A forma como este projeto trata a impressão, é apenas um modelo para conhecimento.
-
-O InvoiCyFramework possibilita imprimir em:
-1.	Dispositivos que possuêm impressora integrada
-2.	Impressora ethernet, informando o endereço IP
-3.	Ou através do modelo exemplificado neste projeto:
-
-	Utilizando os recursos oferecidos pela classe PrintHelper.
+	Este é um modelo estruturado, onde deverá inserir suas informações de parceiro antes de iniciar testes.
 
 
 # Android Studio
@@ -87,5 +108,5 @@ dependencies {
 }
 ```
 
-# Tela de Apresentação do aplicativo de exemplo:
+# Tela de Apresentação, do aplicativo de exemplo:
 ![image](https://user-images.githubusercontent.com/101336870/177347948-ba23df6b-1707-4f6d-9b20-b643493d7a91.png)
