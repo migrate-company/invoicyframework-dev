@@ -1,0 +1,104 @@
+# InvoiCyFramework v1.40.00:
+----------------------------------------------------
+
+1.  Conexão com um servidor/concentrador SAT para autorização de documentos em contingência SAT.
+2.  Passa a salvar a data e hora da consulta empresa somente se foram retornados CSC e IDToken com conteúdo.
+3.  Novos métodos, para consulta:
+    .   ObtemUltimoSequencialNFCe
+    .   ObtemParametro.
+4.  Modifica o modo como deve ser informado a impresora ethernet em uso.
+
+    Para:
+        SERVIDOR:<ip do servidor>,<porta>
+
+    Ao invés de:
+        SERVIDOR:<ip do servidor>|PORTA:<porta>
+
+5.  Adição de log para registrar o tempo decorrido desde a última consulta cadastro.
+6.  Alterado o método de consulta de dados de cadastro da empresa.
+    O FW passa a realizar a consulta dos dados toda a vez que for instanciado, desde que a última consulta tenha sido realizada a mais de 15 minutos.
+
+
+
+# InvoiCyFramework v1.39.00:
+----------------------------------------------------
+
+1.  Permitir definir configurações para a DANFE NFC-e de forma individual, atendendo o contexto do processo de emissão, através de alguns parâmetros
+
+    Ex.:
+
+        <ParametrosAdicionais>
+            <LayoutImpressaoDanfeNfce>1</LayoutImpressaoDanfeNfce>
+            <ImprimeAcrescDescItens>0</ImprimeAcrescDescItens>
+            <MensagemPromocional>mensagem promocional - MIGRATE Developers Team</MensagemPromocional>
+            <ImpressaoRecibo>0</ImpressaoRecibo>
+        </ParametrosAdicionais>
+
+    Os novos parâmetros correspondem à:
+    .   layoutImpressaoDanfeNfce			LAYOUT_IMPRESSAO_DANFENFCE
+	.   imprimeAcrescDescItens				IMPRIME_ACRESC_DESC_ITENS
+	.   layoutImpressaoPosQrcode			LAYOUT_IMPRESSAO_POS_QRCODE
+
+    ::  Lembramos que a aplicação continua com a autonomia para definir suas configurações com contexto geral, através de:
+        Ex.:
+
+            gerenteEnvio.Configura("LAYOUT_IMPRESSAO_DANFENFCE", swImprimeReciboResumido.isChecked() ? "1" : "0");
+            gerenteEnvio.Configura("IMPRIME_ACRESC_DESC_ITENS", swImprimeDescAcres.isChecked() ? "1" : "0");
+
+
+
+# InvoiCyFramework v1.38.00:
+----------------------------------------------------
+
+1.  Interface para consumir arquivos externos de Layout e/ou logotipo, fora do escopo do projeto do Aplicativo/Framework Android.
+
+    .   Este recurso permite que a aplicação tenha autonomia para definir um arquivo de layout de impressão nos padrões do Framework;
+    .   Além de possibilitar definir também um logotipo externo à aplicação.
+
+    ::  Lembramos que a aplicação continua com a autonomia para definir na pasta "assets", os seguintes arquivos:
+        . logotipo.bmp
+        . layoutNFCe.txt
+        . layoutNFCeComDesc.txt
+        . layoutNFCeSimpl.txt
+        . layoutNFSe.txt
+        . layoutCFe.txt
+        . layoutCFeCanc.txt
+
+    Exemplo:
+
+        private class ConfigImprimeLayout implements InterfaceConfigImprimeLayout {
+
+            @Override
+            public String leDocumento() {
+                return contentFileImprimeLayout;
+            }
+
+            @Override
+            public byte[] leDocumentoBytes() {
+                return contentFileImprimeLogotipo;
+            }
+        }
+
+
+
+# InvoiCyFramework v1.37.00:
+----------------------------------------------------
+
+1.  Tratamento automático de documentos pendentes na pasta: DocPendentes/Erro
+
+    Método: int QuantidadeDocumentosPendentesErro()
+    - Retorna a quantidade de documentos pendentes na pasta: DocPendentes/Erro
+
+    Método: String RelatorioPendentesErro()
+    - Retorna xml contendo a lista de documentos pendentes na pasta: DocPendentes/Erro
+
+    Propriedade de configuração: MAX_DIAS_DOC_ERRO
+    - permite informar o máximo de dias em que arquivos da pasta: DocPendentes/Erro, serão mantidos antes de uma exclusão automática.
+
+
+
+# InvoiCyFramework v1.36.01:
+----------------------------------------------------
+
+1.  Registro inicial de change-log v01.36.01
+    início de registro de updates para o projeto Android, 31/5/2023
