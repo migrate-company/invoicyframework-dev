@@ -109,4 +109,9 @@ dependencies {
 ```
 
 # Tela de Apresentação, do aplicativo de exemplo:
-![image](https://user-images.githubusercontent.com/101336870/177347948-ba23df6b-1707-4f6d-9b20-b643493d7a91.png)
+
+
+|1. UI Principal|2. UI Principal: Usando a classe PrintHelper|
+|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
+|![Screenshot_20250122_210805](https://github.com/user-attachments/assets/dd7e9361-06c9-4146-be57-51e504f46d1d)|![Screenshot_20250122_211037](https://github.com/user-attachments/assets/b5271eb3-751b-4026-83e1-241a9a732407)|
+
