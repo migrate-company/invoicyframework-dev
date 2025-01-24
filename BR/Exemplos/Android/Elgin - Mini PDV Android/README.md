@@ -9,48 +9,49 @@ Projeto destinado a demonstrar o uso da biblioteca do InvoiCy Framework Android,
 Adicionando a biblioteca como dependência:
 ```Text
 
-	. Copie o arquivo .aar da biblioteca do InvoiCy Framework para a pasta libs
-		* Neste repositório, a biblioteca está em:
-		InvoicyFrameworkAndroidForDevelopers/app/libs/
-	
-	. Copie os arquivos .aar da biblioteca Elgin Mini-pdv m8/m10 para a pasta libs
-		* Neste repositório, estão sendo utilizados as versões disponíveis até a publicação deste exemplo
-		InvoicyFrameworkAndroidForDevelopers/app/libs/
-		
+. Copie o arquivo .aar da biblioteca do InvoiCy Framework para a pasta libs
+	* Neste repositório, a biblioteca está em:
+	InvoicyFrameworkAndroidForDevelopers/app/libs/
 
-	. Clique File - Project Structure
+. Copie os arquivos .aar da biblioteca Elgin Mini-pdv m8/m10 para a pasta libs
+	* Neste repositório, estão sendo utilizados as versões disponíveis até a publicação
+	  deste exemplo
 
-	. Do lado esquerdo, selecione Dependencies
+	InvoicyFrameworkAndroidForDevelopers/app/libs/
 
-	. Em "All Dependencies", clique no botão com símbolo de "+"
 
-	. Selecione "2 JAR/AAR Dependency"
+. Clique File - Project Structure
 
-	. Cole a localização/caminho onde está a biblioteca do InvoiCy Framework
+. Do lado esquerdo, selecione Dependencies
 
-	. Clique OK, para adicionar esta dependência ao projeto
+. Em "All Dependencies", clique no botão com símbolo de "+"
 
-	. Clique Ok, para salvar suas alterações
+. Selecione "2 JAR/AAR Dependency"
+
+. Cole a localização/caminho onde está a biblioteca do InvoiCy Framework
+
+. Clique OK, para adicionar esta dependência ao projeto
+
+. Clique Ok, para salvar suas alterações
 ```
 	
-Dependências requeridas pela biblioteca InvoiCy Framework
+## Dependências
+```Text
+implementation 'com.google.zxing:core:3.3.0'
+api 'io.jsonwebtoken:jjwt-api:0.11.5'
+runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+runtimeOnly('io.jsonwebtoken:jjwt-orgjson:0.11.5') {
+exclude group: 'org.json', module: 'json' //provided by Android natively
+```
 
-    implementation 'com.google.zxing:core:3.3.0'
-    api 'io.jsonwebtoken:jjwt-api:0.11.5'
-    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
-    runtimeOnly('io.jsonwebtoken:jjwt-orgjson:0.11.5') {
-        exclude group: 'org.json', module: 'json' //provided by Android natively
-    }
+## Como usar:
+```Text
+. A classe Minha Venda, é um modelo como deverá consumir os métodos
+da biblioteca InvoiCy Framework Android.
 
-
-Como usar:
-
-	. A classe Minha Venda, é um modelo como deverá consumir os métodos da biblioteca InvoiCy
-	Framework Android.
-	
-	. A classe Parametro, é um modelo como deverá inserir os parâmetros do emitente entre outros
-	parâmetros de configuração.
-
+. A classe Parametro, é um modelo como deverá inserir os parâmetros
+do emitente entre outros parâmetros de configuração.
+```
 
 # Aplicação de Exemplo
 
@@ -62,5 +63,4 @@ Como usar:
 ## Visualização de impressão utilizando PrintHelper
 |Para imprimir, o exemplo utiliza a interface InterfaceElginMinipdv|
 |-------------|
-|![Screenshot_20250124_083621 - 03](https://github.com/user-attachments/assets/fa457c01-74f6-42ff-89f1-f3e58c8ed802)
-|
+|![Screenshot_20250124_083621 - 03](https://github.com/user-attachments/assets/fa457c01-74f6-42ff-89f1-f3e58c8ed802)|
