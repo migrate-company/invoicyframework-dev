@@ -1,3 +1,11 @@
+# InvoiCyFramework v1.40.01:
+----------------------------------------------------
+
+1.  Bug-fix: Parâmetro vazio ou null, em DocumentoRecibo::carregaDados, pode gerar overflow em AC.
+2.  Bug-fix: Resource review
+
+
+
 # InvoiCyFramework v1.40.00:
 ----------------------------------------------------
 
