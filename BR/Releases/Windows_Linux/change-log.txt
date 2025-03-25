@@ -1,3 +1,11 @@
+# InvoiCy Framework v01.46.28
+-------------------------------------------------------------------------
+1. Adicionada nova função para fazer o download/atualização da tabela de 
+   produtos x alíquotas IBPT: o download passa a ser feito através de 
+   processo paralelo ao solicitar a primeira emissão;
+2. Aumentado o timeout para download da tabela de produtos;
+3. O FW passa a ignorar o parâmetro NUMERO_TENTATIVAS_ENVIO;
+
 # InvoiCy Framework v01.46.27
 -------------------------------------------------------------------------
 1. Adicionado novo parâmetro "REJEICAO_778_INICIA_CONTINGENCIA" para 
