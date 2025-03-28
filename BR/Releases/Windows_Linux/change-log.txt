@@ -1,3 +1,7 @@
+# InvoiCy Framework v01.46.29
+-------------------------------------------------------------------------
+1. Correções no tratamento de configuração de PROXY;
+   
 # InvoiCy Framework v01.46.28
 -------------------------------------------------------------------------
 1. Adicionada nova função para fazer o download/atualização da tabela de 
