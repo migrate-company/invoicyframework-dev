@@ -1,3 +1,11 @@
+# InvoiCy Framework v01.47.02
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01.	Adicionados novos parâmetros "REJEICAO_778_EMITIR_CONTINGENCIA" e "REJEICAO_656_EMITIR_CONTINGENCIA" para definir se o Framework deve emitir o documento 
+	atual em contingência ao receber as rejeições 778 e 656. Este parâmetro se diferencia do parâmetro REJEICAO_nnn_INICIA_CONTINGENCIA por emitir unicamente
+	o documento solicitado em contingência, e retornando para emissão online no envio seguinte;
+
+
 # InvoiCy Framework v01.47.01
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
