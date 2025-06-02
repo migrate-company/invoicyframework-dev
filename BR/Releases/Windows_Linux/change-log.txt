@@ -1,3 +1,11 @@
+# InvoiCy Framework v01.47.05
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01.	Adicionado o recurso de corre√ß√£o de documentos: documentos emitidos em tpEmis=9 e que tiveram alguma rejei√ß√£o, poder√£o ser corrigidos e submetidos √†
+	emiss√£o no Framework. O XML original rejeitado deve ser corrigido, e devem ser indicados o sequencial, a s√©rie e o dhEmi originais do documento rejeitado.
+	Al√©m disso, deve ser informado a tag Correcao com valor 1 nos par√¢metros adicionais da emiss√£o.
+
+
 # InvoiCy Framework v01.47.04
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -7,15 +15,15 @@
 # InvoiCy Framework v01.47.03
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-01.	CorreÁ„o de bug de vari·vel n„o inicializada que causava crash no Linux;
+01.	Corre√ß√£o de bug de vari√°vel n√£o inicializada que causava crash no Linux;
 
 
 # InvoiCy Framework v01.47.02
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-01.	Adicionados novos par‚metros "REJEICAO_778_EMITIR_CONTINGENCIA" e "REJEICAO_656_EMITIR_CONTINGENCIA" para definir se o Framework deve emitir o documento 
-	atual em contingÍncia ao receber as rejeiÁıes 778 e 656. Este par‚metro se diferencia do par‚metro REJEICAO_nnn_INICIA_CONTINGENCIA por emitir unicamente
-	o documento solicitado em contingÍncia, e retornando para emiss„o online no envio seguinte;
+01.	Adicionados novos par√¢metros "REJEICAO_778_EMITIR_CONTINGENCIA" e "REJEICAO_656_EMITIR_CONTINGENCIA" para definir se o Framework deve emitir o documento 
+	atual em conting√™ncia ao receber as rejei√ß√µes 778 e 656. Este par√¢metro se diferencia do par√¢metro REJEICAO_nnn_INICIA_CONTINGENCIA por emitir unicamente
+	o documento solicitado em conting√™ncia, e retornando para emiss√£o online no envio seguinte;
 
 
 # InvoiCy Framework v01.47.01
