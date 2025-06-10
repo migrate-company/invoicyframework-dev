@@ -1,3 +1,13 @@
+# InvoiCy Framework v01.47.06
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01.	Adicionado a possibilidade de parametrizar o modo de corte do papel, entre parcial e total. Para isso, deve-se utilizar o parâmetro adicional
+	<ModoCortePapel> na chamada do método de emissão, passando os valores "parcial" ou "total". Caso o parâmetro não seja informado, o InvoiCy 
+	Framework efetua o corte parcial.
+02. O Framework passa a comandar a abertura de gaveta somente ao imprimir a 2a. via (via do consumidor) nos casos de impressão de 2 vias (emissão
+	em contingência).
+
+
 # InvoiCy Framework v01.47.05
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
