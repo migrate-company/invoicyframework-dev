@@ -14,6 +14,9 @@
 	Framework efetua o corte parcial.
 02. O Framework passa a comandar a abertura de gaveta somente ao imprimir a 2a. via (via do consumidor) nos casos de impressão de 2 vias (emissão
 	em contingência).
+03.	Adicionada consistência do parâmetro xmlEntrada dos métodos InvoiCyFramework_EmiteDocumento, InvoiCyFramework_ImprimeDocumento e 
+	InvoiCyFramework_ImprimeDocumentoEx: caso o primeiro caractere do parâmetro for diferente de '<' o InvoiCy Framework ira tratar o parâmetro 
+	considerando que se trata de um nome de arquivo.
 
 
 # InvoiCy Framework v01.47.05
