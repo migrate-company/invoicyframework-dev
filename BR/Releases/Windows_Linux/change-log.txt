@@ -1,3 +1,15 @@
+# InvoiCy Framework v01.47.08
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01.	Adicionado novo parâmetro CONTROLE_GAVETA para indicar ao Framework se ele deve ou não realizar a abertura automática da gaveta de valores. O parâmetro
+	CONTROLE_GAVETA recebe um indicador 0 ou 1. O valor 0 indica que o Framework não deverá realizar abertura automática da gaveta (ao final das impressões de
+	documentos auxiliares (DANFE). O valor 1, default, habilita o Framework a realizar as aberturas de gaveta de valores.
+02. Adicionado método InvoiCyFramework_AbrirGaveta para comandar o acionamento da gaveta de valores através do Framework. O método recebe 3 parâmetros int, 
+	indicando o pino a ser acionado, o tempo de acionamento em milisegundos e o tempo de desacionamento em milisegundos, respectivamente.
+03.	Melhoria - o Framework deixa de verificar o término da execução de comandos ao imprimir bitmap utilizando impressora Bematech conectada através de 
+	interface ETH.
+
+
 # InvoiCy Framework v01.47.07
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -14,9 +26,6 @@
 	Framework efetua o corte parcial.
 02. O Framework passa a comandar a abertura de gaveta somente ao imprimir a 2a. via (via do consumidor) nos casos de impressão de 2 vias (emissão
 	em contingência).
-03.	Adicionada consistência do parâmetro xmlEntrada dos métodos InvoiCyFramework_EmiteDocumento, InvoiCyFramework_ImprimeDocumento e 
-	InvoiCyFramework_ImprimeDocumentoEx: caso o primeiro caractere do parâmetro for diferente de '<' o InvoiCy Framework ira tratar o parâmetro 
-	considerando que se trata de um nome de arquivo.
 
 
 # InvoiCy Framework v01.47.05
