@@ -1,3 +1,32 @@
+# InvoiCyFramework v1.40.03:
+----------------------------------------------------
+
+1.  Emissão em contingência, quando ocorre ret. 100, SitCodigo 108 e campo DocXMLBase64 vazio.
+2.  Emissão em contingência, para ret. previstos em lista de controle confome rejeicao.
+3.  Revisão de formas de pagamento em layout de impressão.
+4.  Regras no controle de sincronização de documentos emitidos em contingência.
+5.  Compatibilização de layout NFCe;
+    Impressão do valor líquido do item;
+    Impressão do valor de Frete do item;
+    Impressão do valor de Seguro do item;
+    Impressão do valor de Acréscimo do item.
+6.  Parâmetro VALIDAR_REJEICAO_212.
+7.  Revisão de layout padrão, de impressão.
+8.  Driver de impressão, por fabricante.
+
+
+
+# InvoiCyFramework v1.40.02:
+----------------------------------------------------
+
+1.  Bug-fix: Fluxo para leitura de parâmetros do documento
+2.  Registro em log para xml's de entrada e retorno
+3.  Bug-fix: Definição de fonte e alinhamento, independe do layout
+4.  Bug-fix: Registro em log, converteDadosConformeModeloImpressora
+5.  Tratamento para contornar limite de saída - Logcat
+
+
+
 # InvoiCyFramework v1.40.01:
 ----------------------------------------------------
 
