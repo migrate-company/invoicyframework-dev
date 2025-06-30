@@ -1,3 +1,10 @@
+# InvoiCyFramework v1.40.05:
+----------------------------------------------------
+
+1.  Revisão de processos dependentes do uso de informações obtidas em consultas ao invoicy.
+
+
+
 # InvoiCyFramework v1.40.04:
 ----------------------------------------------------
 
