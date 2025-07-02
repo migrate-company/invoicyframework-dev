@@ -1,3 +1,11 @@
+# InvoiCy Framework v01.47.09
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01.	Refatoração de todas as possibilidades de retransmissão de comunicações em caso de falhas/timeouts nas comunicações com o InvoiCy: remoção de variáveis 
+	que anteriormente eram utilizadas para definir número de tentativas, remoção de retentativas fixadas em código, definição de 3 tentativas somente para 
+	comunicações de consultas (por exemplo consulta da tabela IBPT, consulta documentos). As comunicações de emissão e eventos serão realizadas somente 1
+	tentativa;
+
 # InvoiCy Framework v01.47.08
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
