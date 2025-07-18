@@ -1,3 +1,11 @@
+# InvoiCy Framework v01.48.01
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01.	Implementação da gravação da chave privada do certificado de forma criptografada;
+02.	Melhoria na gravação dos parâmetros da empresa no log;
+03. Correção na validação de dados de pagamento no documento eletrônico do PY;
+04. Implementado retorno da série e sequencial em caso de rejeição estando o parâmetro AUTO_INCREMENTO desabilitado;
+
 # InvoiCy Framework v01.48.00
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
