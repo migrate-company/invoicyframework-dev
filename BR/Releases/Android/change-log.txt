@@ -1,11 +1,22 @@
+# InvoiCyFramework v1.40.07:
+----------------------------------------------------
+
+1.  Novas tag's adicionadas ao grupo <ParametrosAdicionais>, possibilita o envio de até 5 comprovantes adicionais (TEF, Confissão de dívida, etc) para impressão após a DANFE;
+    Estes comprovandes podem ser enviados como parâmetros adicionais da emissão, através das tag XML DocumentoTexto1 até DocumentoTexto5;
+2.  Revisão do modelo de gerenciamento de arquivos, considerando:
+    . Android 10+ via MediaStore;
+    . Android <10, via EXTERNAL_STORAGE, com PERMISSION_GRANTED;
+    . e Armazenamento interno, quando não houver nenhuma permissão ativa.
+
+
 # InvoiCyFramework v1.40.06:
 ----------------------------------------------------
 
 1.  Controle de log em arquivos, gerenciado automaticamente
     .	Quando houver permissões ao aplicativo, para escrita no storage de armazenamento externo, os arquivos serão armazenados em: "/Documents/InvoiCyFW/Logs/"
 		. Será realizado compactação ativa em formato zip, para log's anteriores à data atual.
-		
-		É recomendado a implementação da Interface de log, LogIFW; Podendo ser utilizada em conjunto com o parâmetro "LOG_REGISTRO" ativo.
+
+    É recomendado a implementação da Interface de log, LogIFW; Podendo ser utilizada em conjunto com o parâmetro "LOG_REGISTRO" ativo.
 
 
 
