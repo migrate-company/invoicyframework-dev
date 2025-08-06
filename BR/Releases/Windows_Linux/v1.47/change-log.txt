@@ -1,3 +1,9 @@
+# InvoiCy Framework v01.47.11
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. Correção da implementação do retorno da série e sequencial em caso de rejeição estando o parâmetro AUTO_INCREMENTO desabilitado: o sequencial e série
+	retornados não estavam sendo inicializados com os valores informados no XML de entrada;
+
 # InvoiCy Framework v01.47.10
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
