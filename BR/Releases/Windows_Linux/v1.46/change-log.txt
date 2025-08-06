@@ -1,8 +1,14 @@
+# InvoiCy Framework v01.46.32
+-------------------------------------------------------------------------
+1.	Adicionado o código de rejeição 204 na lista de códigos nos quais o 
+	FW poderá entrar em contingência, se parametrizado para isso;
+
 # InvoiCy Framework v01.46.31
 -------------------------------------------------------------------------
 1.	Adicionado o código de rejeição 296-"Rejeição: Certificado Assinatura 
 	erro no acesso a LCR" na lista de códigos nos quais o FW poderá 
-	entrar em contingência, se parametrizado para isso;
+	efetuar emissão em contingência ou entrar em contingência, se 
+	parametrizado para isso;
 2.	Adicionado log das propriedades dos arquivos DB;
 
 # InvoiCy Framework v01.46.30
