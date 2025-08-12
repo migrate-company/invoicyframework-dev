@@ -1,3 +1,8 @@
+# InvoiCy Framework PY v01.02.07
+-------------------------------------------------------------------------
+1. Corrección: InvoiCy Framework estaba usando un índice incorrecto de la 
+   tabla de códigos y descripciones.;
+
 # InvoiCy Framework PY v01.02.06
 -------------------------------------------------------------------------
 1. Ajuste en el tratamiento del campo DatosPago;
