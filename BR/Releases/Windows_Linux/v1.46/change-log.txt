@@ -1,3 +1,12 @@
+# InvoiCy Framework v01.46.33
+-------------------------------------------------------------------------
+1.	Adicionado tratamento para o parâmetro "REJEICAO_nnn_INICIA_CONTINGENCIA";
+2.  O InvoiCy Framework passa a validar o acesso (permissões de escrita e 
+	leitura) aos arquivos DB ao inicializar e informa erro para as tentativas
+	de emissão de documentos caso não tenha acesso;
+3.	O InvoiCy Framework passa a devolver rejeição 999 caso não consiga salvar
+	o número sequencial auto-definido nas emissões de NFCe;
+
 # InvoiCy Framework v01.46.32
 -------------------------------------------------------------------------
 1.	Adicionado o código de rejeição 204 na lista de códigos nos quais o 
