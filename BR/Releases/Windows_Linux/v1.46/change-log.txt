@@ -1,3 +1,9 @@
+# InvoiCy Framework v01.46.34
+-------------------------------------------------------------------------
+1.	O InvoiCy Framework passa a devolver rejeição 995-Rejeição: Erro ao 
+	salvar sequencial caso não consiga salvar o número sequencial 
+	auto-definido nas emissões de NFCe;
+
 # InvoiCy Framework v01.46.33
 -------------------------------------------------------------------------
 1.	Adicionado tratamento para o parâmetro "REJEICAO_nnn_INICIA_CONTINGENCIA";
