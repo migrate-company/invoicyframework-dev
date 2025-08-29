@@ -1,3 +1,13 @@
+# InvoiCyFramework v1.40.08:
+----------------------------------------------------
+1.  Parâmetro "REJEICAO_778_INICIA_CONTINGENCIA" para definir se o Framework deve entrar em contingência ao receber a rejeição 778-Rejeição:
+    Informado NCM inexistente[nItem:nnn];
+2.  Parâmetro "REJEICAO_656_INICIA_CONTINGENCIA" para definir se o Framework deve entrar em contingência ao receber a rejeição 656-Consumo indevido;
+3.  Criados novos parâmetros IMPRIME_CPF_DEST_MASCARADO e NAO_IMPRIME_ENDERECO_DEST para permitir o controle da impressão de CPF mascarado e a não impressão
+    do endereço do destinatário, tanto na impressão normal quanto na re-impressão;
+4.  Implementação da Nota Técnica 2025.001 - QR-Code versão 3;
+
+
 # InvoiCyFramework v1.40.07:
 ----------------------------------------------------
 
