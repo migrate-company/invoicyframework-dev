@@ -1,3 +1,15 @@
+# InvoiCy Framework v01.48.02
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. Passa a gravar as informações armazenadas (configuração. parâmetros, sequencial, etc.), em log, a cada 4 horas;
+02. BR: O InvoiCy Framework passa a devolver rejeição 995-Rejeição: Erro ao salvar sequencial caso não consiga salvar o número sequencial auto-definido nas emissões de NFCe;
+03. BR: Adicionada a verificação do correto preenchimento de campos da RTC (rejeições 1073, 1075, 1076, 1117, 1118 e 1119);
+04. BR: Compatibilização com a NT 2025.002 v1.20;
+05. BR: Passa a efetuar as consultas (data de validade do certificado e dados cadastrais da empresa) em todos os reinícios do InvoiCy Framework;
+06. BR: Passa a utilizar os novos WebService para consultas de documentos (aconsultadocumentos);
+07. PY: Corrección: InvoiCy Framework estaba usando un índice incorrecto de la tabla de códigos y descripciones;
+08. PY: Corrección en el montaje de campos con datos de pago con tarjeta;
+
 # InvoiCy Framework v01.48.01
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -17,7 +29,7 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 01.	Refatoração de todas as possibilidades de retransmissão de comunicações em caso de falhas/timeouts nas comunicações com o InvoiCy: remoção de variáveis 
-	que anteriormente eram utilizadas para definir número de tentativas, remoção de retentativas fixadas em código, definição de 3 tentativas somente para 
+	que anteriormente eram utilizadas para definir número de tentativas, remoção de retentativas fixadas em código, definição de 3 retentativas somente para 
 	comunicações de consultas (por exemplo consulta da tabela IBPT, consulta documentos). As comunicações de emissão e eventos serão realizadas somente 1
 	tentativa;
 
@@ -27,8 +39,10 @@
 01.	Adicionado novo parâmetro CONTROLE_GAVETA para indicar ao Framework se ele deve ou não realizar a abertura automática da gaveta de valores. O parâmetro
 	CONTROLE_GAVETA recebe um indicador 0 ou 1. O valor 0 indica que o Framework não deverá realizar abertura automática da gaveta (ao final das impressões de
 	documentos auxiliares (DANFE). O valor 1, default, habilita o Framework a realizar as aberturas de gaveta de valores.
+
 02. Adicionado método InvoiCyFramework_AbrirGaveta para comandar o acionamento da gaveta de valores através do Framework. O método recebe 3 parâmetros int, 
 	indicando o pino a ser acionado, o tempo de acionamento em milisegundos e o tempo de desacionamento em milisegundos, respectivamente.
+
 03.	Melhoria - o Framework deixa de verificar o término da execução de comandos ao imprimir bitmap utilizando impressora Bematech conectada através de 
 	interface ETH.
 
