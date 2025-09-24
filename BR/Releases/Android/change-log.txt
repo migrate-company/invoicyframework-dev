@@ -1,3 +1,9 @@
+# InvoiCyFramework v1.40.09:
+----------------------------------------------------
+1.  Controle de vigência e tratamentos para novos campos vinculados à Reforma Tributária de Consumo (RTC);
+2.  Definição de gerenciamento de arquivos sob permissão de aplicativo, PRIVATE_STORAGE;
+
+
 # InvoiCyFramework v1.40.08:
 ----------------------------------------------------
 1.  Parâmetro "REJEICAO_778_INICIA_CONTINGENCIA" para definir se o Framework deve entrar em contingência ao receber a rejeição 778-Rejeição:
