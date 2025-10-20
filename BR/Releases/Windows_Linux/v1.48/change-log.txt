@@ -1,3 +1,10 @@
+
+# InvoiCy Framework v01.48.04
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. BR: Adição de novos campos da RTC - Nota Técnica 2025.002-RTC - Versão 1.30;
+02. BR: Ajustes na verificação da data de validade do certificado a cada emissão - Caso a data esteja a menos de 15 dias da expiração, refaz a consulta a cada 2 horas - Caso receba uma data de expiração atualizada, em virtude de o certificado ter sido atualizado no InvoiCy, realiza consulta para obtenção do certificado atualizado;
+
 # InvoiCy Framework v01.48.03
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
