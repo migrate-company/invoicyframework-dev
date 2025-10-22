@@ -1,3 +1,8 @@
+# InvoiCyFramework v1.40.11:
+----------------------------------------------------
+1.  Ajuste na classe de gerenciamento do armazenamento para resolver PlatformException;
+
+
 # InvoiCyFramework v1.40.10:
 ----------------------------------------------------
 1.  Salva o ambiente na estrutura de informações de configuração.
@@ -5,7 +10,7 @@
 
 # InvoiCyFramework v1.40.09:
 ----------------------------------------------------
-1.  Controle de vigência e tratamentos para novos campos vinculados à Reforma Tributária de Consumo (RTC);
+1.  Controle de vigência e tratamentos para novos campos vinculados à RTC;
 2.  Definição de gerenciamento de arquivos sob permissão de aplicativo, PRIVATE_STORAGE;
 
 
