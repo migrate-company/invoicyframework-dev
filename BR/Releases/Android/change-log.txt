@@ -1,6 +1,6 @@
 # InvoiCyFramework v1.40.11:
 ----------------------------------------------------
-1.  Ajuste na classe de gerenciamento do armazenamento para resolver PlatformException;
+1.  Ajuste na classe de gerenciamento do armazenamento para resolver PlatformException.
 
 
 # InvoiCyFramework v1.40.10:
