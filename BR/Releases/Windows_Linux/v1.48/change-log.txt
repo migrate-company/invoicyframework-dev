@@ -1,4 +1,9 @@
 
+# InvoiCy Framework v01.48.05
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. BR: Adicionado tratamento para que o resultado de uma emissão de correção seja devolvida diretamente para o Aplicativo Comercial (sem tratar os status que podem direcionar para contingência);
+
 # InvoiCy Framework v01.48.04
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
