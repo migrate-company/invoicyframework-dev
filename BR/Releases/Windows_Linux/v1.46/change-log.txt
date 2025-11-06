@@ -1,3 +1,15 @@
+# InvoiCy Framework v01.46.36
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. Passa a gerar instrução de SubstituirDocumento e enviar a instrução como parâmetro da emissão, quando ocorrer falha de comunicação;
+02. Passa a entrar em contingência ao receber retorno 201 no campo Codigo (retorno da comunicação);
+03. Passa a estruturar o arquivo de documento pendente de sincronização, indicando o documento (tag <Documento>) e os parâmetros (tag <Parametros>), esta 
+	última necessária para salvar um XML adicional para comandar a substituição de documento (SubstituirDocumento);
+04. Restaurada a url de consulta de documentos para o arecepcao;
+
+# InvoiCy Framework v01.46.35
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. Passa a utilizar os novos WebService para consultas de documentos (aconsultadocumentos);
+
 # InvoiCy Framework v01.46.34
 -------------------------------------------------------------------------
 1.	O InvoiCy Framework passa a devolver rejeição 995-Rejeição: Erro ao 
