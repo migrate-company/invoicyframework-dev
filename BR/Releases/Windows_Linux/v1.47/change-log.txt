@@ -1,3 +1,18 @@
+
+# InvoiCy Framework v01.47.14
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. Passa a gerar instrução de SubstituirDocumento e enviar a instrução como parâmetro da emissão, quando ocorrer falha de comunicação;
+02. Passa a entrar em contingência ao receber retorno 201 no campo Codigo (retorno da comunicação);
+03. Passa a estruturar o arquivo de documento pendente de sincronização, indicando o documento (tag <Documento>) e os parâmetros (tag <Parametros>), esta 
+    última necessária para salvar um XML adicional para comandar a substituição de documento (SubstituirDocumento);
+04. Restaurada a url de consulta de documentos para o arecepcao;
+
+# InvoiCy Framework v01.47.13
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. Adicionado tratamento para que o resultado de uma emissão de correção seja devolvida diretamente para o Aplicativo Comercial (sem tratar os status que podem direcionar para contingência);
+
 # InvoiCy Framework v01.47.12
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
