@@ -1,6 +1,11 @@
+# InvoiCyFramework v1.40.12:
+----------------------------------------------------
+1.  Nota Técnica 2025.002-RTC - Versão 1.30;
+
+
 # InvoiCyFramework v1.40.11:
 ----------------------------------------------------
-1.  Ajuste na classe de gerenciamento do armazenamento para resolver PlatformException.
+1.  Ajuste na classe de gerenciamento do armazenamento para resolver PlatformException;
 
 
 # InvoiCyFramework v1.40.10:
