@@ -1,3 +1,7 @@
+# InvoiCy Framework PY v01.02.09
+-------------------------------------------------------------------------
+1. Corrección en el ensamblaje de múltiples grupos gCamDEAsoc en XML;
+
 # InvoiCy Framework PY v01.02.08
 -------------------------------------------------------------------------
 1. Corrección en el montaje de campos con datos de pago con tarjeta;
