@@ -1,4 +1,13 @@
 
+# InvoiCy Framework v01.48.06
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. BR: Melhorias nos processo de consulta da data de expiração do certificado e consulta dados da empresa;
+02. BR: Passa a gerar instrução de SubstituirDocumento e enviar a instrução como parâmetro da emissão, quando ocorrer falha de comunicação;
+03. BR: Passa a entrar em contingência ao receber retorno 201 no campo Codigo (retorno da comunicação);
+04. BR: Correção - caso a resposta da requisição enviada ao InvoiCy esteja em formato inválido, considera como uma falha de comunicação e entra em contingência;
+
+
 # InvoiCy Framework v01.48.05
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -49,7 +58,7 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 01.	Refatoração de todas as possibilidades de retransmissão de comunicações em caso de falhas/timeouts nas comunicações com o InvoiCy: remoção de variáveis 
-	que anteriormente eram utilizadas para definir número de tentativas, remoção de retentativas fixadas em código, definição de 3 tentativas somente para 
+	que anteriormente eram utilizadas para definir número de tentativas, remoção de retentativas fixadas em código, definição de 3 retentativas somente para 
 	comunicações de consultas (por exemplo consulta da tabela IBPT, consulta documentos). As comunicações de emissão e eventos serão realizadas somente 1
 	tentativa;
 
@@ -59,8 +68,10 @@
 01.	Adicionado novo parâmetro CONTROLE_GAVETA para indicar ao Framework se ele deve ou não realizar a abertura automática da gaveta de valores. O parâmetro
 	CONTROLE_GAVETA recebe um indicador 0 ou 1. O valor 0 indica que o Framework não deverá realizar abertura automática da gaveta (ao final das impressões de
 	documentos auxiliares (DANFE). O valor 1, default, habilita o Framework a realizar as aberturas de gaveta de valores.
+
 02. Adicionado método InvoiCyFramework_AbrirGaveta para comandar o acionamento da gaveta de valores através do Framework. O método recebe 3 parâmetros int, 
 	indicando o pino a ser acionado, o tempo de acionamento em milisegundos e o tempo de desacionamento em milisegundos, respectivamente.
+
 03.	Melhoria - o Framework deixa de verificar o término da execução de comandos ao imprimir bitmap utilizando impressora Bematech conectada através de 
 	interface ETH.
 
