@@ -1,3 +1,15 @@
+# InvoiCyFramework v1.40.13:
+----------------------------------------------------
+1.  Método: String RelatorioPendentes()
+    Recupera uma lista com todos os documentos ainda pendentes de envio
+
+2.  Método: int QuantidadeDocumentosPendentes()
+    Número de documentos ainda pendentes de envio
+
+3.  Método: int EnviaDocumentosPendentes()
+    inicializa processo de envio dos documentos pendentes
+
+
 # InvoiCyFramework v1.40.12:
 ----------------------------------------------------
 1.  Nota Técnica 2025.002-RTC - Versão 1.30;
@@ -31,7 +43,6 @@
 
 # InvoiCyFramework v1.40.07:
 ----------------------------------------------------
-
 1.  Novas tag's adicionadas ao grupo <ParametrosAdicionais>, possibilita o envio de até 5 comprovantes adicionais (TEF, Confissão de dívida, etc) para impressão após a DANFE;
     Estes comprovandes podem ser enviados como parâmetros adicionais da emissão, através das tag XML DocumentoTexto1 até DocumentoTexto5;
 2.  Revisão do modelo de gerenciamento de arquivos, considerando:
@@ -42,7 +53,6 @@
 
 # InvoiCyFramework v1.40.06:
 ----------------------------------------------------
-
 1.  Controle de log em arquivos, gerenciado automaticamente
     .	Quando houver permissões ao aplicativo, para escrita no storage de armazenamento externo, os arquivos serão armazenados em: "/Documents/InvoiCyFW/Logs/"
 		. Será realizado compactação ativa em formato zip, para log's anteriores à data atual.
@@ -50,27 +60,21 @@
     É recomendado a implementação da Interface de log, LogIFW; Podendo ser utilizada em conjunto com o parâmetro "LOG_REGISTRO" ativo.
 
 
-
 # InvoiCyFramework v1.40.05:
 ----------------------------------------------------
-
 1.  Revisão de processos dependentes do uso de informações obtidas em consultas ao invoicy.
-
 
 
 # InvoiCyFramework v1.40.04:
 ----------------------------------------------------
-
 1.  Controle para diferenciar processos impactados por parâmetro FORMATO_RETORNO.
 2.  Controle para garantir instância dependente do parâmetro AUTO_INCREMENTO.
 3.  Compatibilizado uso do parâmetro RETORNO_FORMATO, conforme processo adotado em ambientes Windows/Linux.
 4.  Revisão de processo de envio de documentos pendentes, quando nenhum processo tpEmis "1" tenha ocorrido previamente.
 
 
-
 # InvoiCyFramework v1.40.03:
 ----------------------------------------------------
-
 1.  Emissão em contingência, quando ocorre ret. 100, SitCodigo 108 e campo DocXMLBase64 vazio.
 2.  Emissão em contingência, para ret. previstos em lista de controle confome rejeicao.
 3.  Revisão de formas de pagamento em layout de impressão.
@@ -85,10 +89,8 @@
 8.  Driver de impressão, por fabricante.
 
 
-
 # InvoiCyFramework v1.40.02:
 ----------------------------------------------------
-
 1.  Bug-fix: Fluxo para leitura de parâmetros do documento
 2.  Registro em log para xml's de entrada e retorno
 3.  Bug-fix: Definição de fonte e alinhamento, independe do layout
@@ -96,18 +98,14 @@
 5.  Tratamento para contornar limite de saída - Logcat
 
 
-
 # InvoiCyFramework v1.40.01:
 ----------------------------------------------------
-
 1.  Bug-fix: Parâmetro vazio ou null, em DocumentoRecibo::carregaDados, pode gerar overflow em AC.
 2.  Bug-fix: Resource review
 
 
-
 # InvoiCyFramework v1.40.00:
 ----------------------------------------------------
-
 1.  Conexão com um servidor/concentrador SAT para autorização de documentos em contingência SAT.
 2.  Passa a salvar a data e hora da consulta empresa somente se foram retornados CSC e IDToken com conteúdo.
 3.  Novos métodos, para consulta:
@@ -126,14 +124,10 @@
     O FW passa a realizar a consulta dos dados toda a vez que for instanciado, desde que a última consulta tenha sido realizada a mais de 15 minutos.
 
 
-
 # InvoiCyFramework v1.39.00:
 ----------------------------------------------------
-
 1.  Permitir definir configurações para a DANFE NFC-e de forma individual, atendendo o contexto do processo de emissão, através de alguns parâmetros
-
     Ex.:
-
         <ParametrosAdicionais>
             <LayoutImpressaoDanfeNfce>1</LayoutImpressaoDanfeNfce>
             <ImprimeAcrescDescItens>0</ImprimeAcrescDescItens>
@@ -153,12 +147,9 @@
             gerenteEnvio.Configura("IMPRIME_ACRESC_DESC_ITENS", swImprimeDescAcres.isChecked() ? "1" : "0");
 
 
-
 # InvoiCyFramework v1.38.00:
 ----------------------------------------------------
-
 1.  Interface para consumir arquivos externos de Layout e/ou logotipo, fora do escopo do projeto do Aplicativo/Framework Android.
-
     .   Este recurso permite que a aplicação tenha autonomia para definir um arquivo de layout de impressão nos padrões do Framework;
     .   Além de possibilitar definir também um logotipo externo à aplicação.
 
@@ -172,9 +163,7 @@
         . layoutCFeCanc.txt
 
     Exemplo:
-
         private class ConfigImprimeLayout implements InterfaceConfigImprimeLayout {
-
             @Override
             public String leDocumento() {
                 return contentFileImprimeLayout;
@@ -187,10 +176,8 @@
         }
 
 
-
 # InvoiCyFramework v1.37.00:
 ----------------------------------------------------
-
 1.  Tratamento automático de documentos pendentes na pasta: DocPendentes/Erro
 
     Método: int QuantidadeDocumentosPendentesErro()
@@ -203,9 +190,7 @@
     - permite informar o máximo de dias em que arquivos da pasta: DocPendentes/Erro, serão mantidos antes de uma exclusão automática.
 
 
-
 # InvoiCyFramework v1.36.01:
 ----------------------------------------------------
-
 1.  Registro inicial de change-log v01.36.01
     início de registro de updates para o projeto Android, 31/5/2023
