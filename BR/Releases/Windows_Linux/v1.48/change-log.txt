@@ -1,3 +1,17 @@
+# InvoiCy Framework v01.48.11
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. BR: Passa a tratar emissão de NFe de forma similar a NFCe, fazendo conversão para layout sefaz, controle de numeração e demais requisitos da NFe. Importante ressaltar que o Framework não fará a impressão da DANFE de NFe e a emissão em contigência segue as especificações da NFe;
+02. BR: Adicionado o escape de caracter & no momento de montar a mensagem soap para envio para o InvoiCy;
+
+# InvoiCy Framework v01.48.10
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. BR: Implementação de estratégia de timeout adaptável. Acrescenta 1 segundo no timeout para cada 30kB de informação transmitida. Acrescenta 2 segundos no timeout global de comunicação quando ocorrer timeout, até o máximo de 10 segundos de acréscimo, e diminui este tempo à medida que comunicações bem sucedidas aconteçam;
+02. BR: Ajustes no tratamento das informações retornadas pela calculadora RTC;
+03. BR: O Framework passa a retornar erro de emissão quando a calculadora RTC estiver inacessível ou responder com algum erro;
+04. BR: Ajuste na montagem do XML a partir dos dados devolvidos pela calculadora RTC - não monta o grupo gIBSCBS para itens que tem as alíquotas zeradas (p. ex. CST 410);
+
 # InvoiCy Framework v01.48.09
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
