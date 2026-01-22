@@ -1,7 +1,9 @@
 # InvoiCy Framework v01.48.12
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-01. BR: Correção - não enviar instrução de substituição de documento quando o parâmetro AUTO_INCREMENTA estiver desativado;
+01. BR: Passa a não enviar instrução de substituição de documento quando o auto incremento estiver desativado;
+02. BR: Passa a tratar retorno 109/105 na sincronização de documentos pendentes, como documento emitido com sucesso;
+03. BR: Passa a adicionar o campo infAdProd antes de vItem, quando o cálculo de tributos da Lei do Imposto estiver ativo com valor do parâmetro maior do que 1;
 
 # InvoiCy Framework v01.48.11
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
