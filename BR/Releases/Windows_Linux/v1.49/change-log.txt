@@ -1,7 +1,15 @@
+# InvoiCy Framework v01.49.03
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. BR: Novos recursos permitem usar a API da Calculadora offline, diretamente através do ambiente Java, facilitando a integração com o ERP.
+        Ambiente Linux
+02. BR: Revisão para, Informações de Documentos Fiscais Referenciados.
+
 # InvoiCy Framework v01.49.02
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 01. BR: Novos recursos permitem usar a API da Calculadora offline, diretamente através do ambiente Java, facilitando a integração com o ERP.
+        Ambiente Windows
 02. BR: Passa a tratar retorno 109/105 na sincronização de documentos pendentes, como documento emitido com sucesso;
 03. BR: Passa a adicionar o campo infAdProd antes de vItem, quando o cálculo de tributos da Lei do Imposto estiver ativo com valor do parâmetro maior do que 1;
 
