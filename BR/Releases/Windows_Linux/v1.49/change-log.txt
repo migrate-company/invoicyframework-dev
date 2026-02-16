@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.49.06
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. BR: O Framework passa a calcular o hash do CSRT ao preencher as informações do Responsável técnico;
+
 # InvoiCy Framework v01.49.05
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -8,7 +13,7 @@
 
 01. BR: O Framework deixa de entrar em modo de contingência se o parâmetro de auto incremento não estiver setado;
 
-# InvoiCy Framework v01.49.03 (Release Candidate)
+# InvoiCy Framework v01.49.03
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 01. BR: Novos recursos permitem usar a API da Calculadora offline, diretamente através do ambiente Java, facilitando a integração com o ERP.
