@@ -1,3 +1,9 @@
+# InvoiCy Framework v01.48.15
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. BR: Adicionada a possibilidade de impressão do código de barras dos dados da chave de acesso da NFCe, na DANFCe;
+02. BR: Adicionada a possibilidade de impressão do código de produto utilizando o cEAN, quando preenchido com valor diferente de "SEM GTIN", na DANFCe;
+
 # InvoiCy Framework v01.48.14
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 
