@@ -1,0 +1,44 @@
+{
+    "all": [
+        {
+            "id": "",
+            "package_name": "InvoiCyFramework_01_49_07"
+        }
+    ],
+    "cnpj": [
+        {
+            "id": "28531348000124",
+            "package_name": "InvoiCyFramework_01_49_07"
+        },
+        {
+            "id": "06354976000149",
+            "package_name": "InvoiCyFramework_01_49_07"
+        }
+    ],
+    "mac": [
+        {
+            "id": "00:D7:6D:5A:F3:CA",
+            "package_name": "InvoiCyFramework_01_49_07"
+        },
+        {
+            "id": "00:D7:6D:5A:F3:CB",
+            "package_name": "InvoiCyFramework_01_49_07"
+        }
+    ],
+    "packages": [
+        {
+            "name": "InvoiCyFramework_01_49_07",
+            "windows32": "https://raw.githubusercontent.com/migrate-company/invoicyframework-dev/refs/heads/main/update/windows/32/InvoiCyFramework_01_49_07.dll",
+            "windows64": "https://raw.githubusercontent.com/migrate-company/invoicyframework-dev/refs/heads/main/update/windows/64/InvoiCyFramework_01_49_07.dll",
+            "linux32": "se o caminho for definido vazio, o FW deve considerar como *atualizado* e setar a versao corrente com o name",
+            "linux64": "https://raw.githubusercontent.com/migrate-company/invoicyframework-dev/refs/heads/main/update/linux/64/InvoiCyFramework_01_49_07.so"
+        },
+        {
+            "name": "InvoiCyFramework_01_48_13",
+            "windows32": "https://raw.githubusercontent.com/migrate-company/invoicyframework-dev/refs/heads/main/update/windows/32/InvoiCyFramework_01_48_13.dll",
+            "windows64": "https://raw.githubusercontent.com/migrate-company/invoicyframework-dev/refs/heads/main/update/windows/64/InvoiCyFramework_01_48_13.dll",
+            "linux32": "se o caminho for definido vazio, o FW deve considerar como *atualizado* e setar a versao corrente com o name",
+            "linux64": "https://raw.githubusercontent.com/migrate-company/invoicyframework-dev/refs/heads/main/update/linux/64/InvoiCyFramework_01_48_13.so"
+        }
+    ]
+}
