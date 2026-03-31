@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.49.08
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Implementação da validação do CNPJ alfa numérico;
+02. BR: Correção no tratamento do parâmetro de emissão "AguardarFinalizarImpressaoRecibo";
+
 # InvoiCy Framework v01.49.07
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Controle de impressão única para o parâmetro adicional, DocumentoTexto* (1..5) (aplica-se apenas para NFC-e, modelo 65, emitida em contingência off-line, tpEmis 9);
