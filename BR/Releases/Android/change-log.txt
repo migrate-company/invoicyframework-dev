@@ -1,3 +1,18 @@
+# InvoiCyFramework v1.40.15:
+----------------------------------------------------
+1.  Bug-fix: Alguns parâmetros não informados em "ParametrosAdicionais", não estavam sendo interpretados com o valor
+    previamente definido através do método "InvoiCyFramework.Configura()".
+2.  Novos recursos permitem consumir a API da Calculadora de Tributos sobre o Consumo (offline).
+    Consulte o manual do InvoiCy Framework, para obter detalhes sobre:
+    .   Instalação local ou em rede em ambiente Windows/linux, da Calculadora de Tributos sobre o Consumo (offline);
+    .   Uso e configuração do parâmetro URL_API_CALCULADORA, para consumir API em ambientes de rede e Android.
+3.  Adicionado tratamento para:
+    .   Grupo de notas de antecipação de pagamento (ide/gPagAntecipado);
+    .   Informações de Documentos Fiscais Referenciados, nivel de documento (ide/NFRef/NFRefItem);
+4.  Controle de impressão única para o parâmetro adicional, DocumentoTexto* (1..5);
+    Aplica-se apenas para NFC-e, modelo 65, emitida em contingência off-line, tpEmis 9;
+
+
 # InvoiCyFramework v1.40.14:
 ----------------------------------------------------
 1.  Atualizado regras de validação do IBS/CBS/IS
