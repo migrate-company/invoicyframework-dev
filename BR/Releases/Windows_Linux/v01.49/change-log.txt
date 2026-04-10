@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.49.10
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Ajuste no tempo da janela de sincronização de documentos emitidos em contingência de 60 para 10 segundos;
+02. BR: Remoção do sleep entre documentos da sincronização de documentos emitidos em contingência;
+
 # InvoiCy Framework v01.49.09
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Melhorias no processo de obtenção do certificado digital do InvoiCy;
