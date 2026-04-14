@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.49.11
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Ajuste na avaliação da data de validade do certificado, para eliminar consultas de dados da empresa desnecessárias no InvoiCy;
+02. BR: Criação de áreas de armazenamento de retornos de emissão para evitar que emissões em um ambiente multi-thread apaguem o retorno de emissões concorrentes;
+
 # InvoiCy Framework v01.49.10
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Ajuste no tempo da janela de sincronização de documentos emitidos em contingência de 60 para 10 segundos;
