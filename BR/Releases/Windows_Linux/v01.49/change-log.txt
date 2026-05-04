@@ -1,6 +1,13 @@
+# InvoiCy Framework v01.49.12
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: FW deixa de verificar a data de validade do certificado obtida na consulta específica para tratar somente a data de validade do certificado PFX baixado na ConsultaEmpresa;
+02. Realiza a consulta dos dados da empresa no momento do cadastramento;
+03. Criado método "finaliza" na classe Log para permitir a troca de diretório de gravação do log com o FW rodando;
+04. Ajustes em gravação de log;
+
 # InvoiCy Framework v01.49.11
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-01. BR: Ajuste na avaliação da data de validade do certificado, para eliminar consultas de dados da empresa desnecessárias no InvoiCy;
+01. BR: Ajuste na avaliação da data de validade do certificado, para eliminar consultas de dados da empresa desnecessárias ao InvoiCy;
 02. BR: Criação de áreas de armazenamento de retornos de emissão para evitar que emissões em um ambiente multi-thread apaguem o retorno de emissões concorrentes;
 
 # InvoiCy Framework v01.49.10
