@@ -1,3 +1,7 @@
+# InvoiCy Framework v01.49.13
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Correção de bug no cálculo do cNF, que gerava a rejeição 236, impedindo a emissão de NFCe;
+
 # InvoiCy Framework v01.49.12
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: FW deixa de verificar a data de validade do certificado obtida na consulta específica para tratar somente a data de validade do certificado PFX baixado na ConsultaEmpresa;
