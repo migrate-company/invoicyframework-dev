@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.49.15
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Melhorias no tratamento da função InvoiCyFramework_ObtemParametro para obtenção da data de validade do certificado;
+02. BR: Melhorias no envio de NFe/NFCe, eventos, inutilização e consultas;
+
 # InvoiCy Framework v01.49.14
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Correção de bug na rotina de gravação de log;
