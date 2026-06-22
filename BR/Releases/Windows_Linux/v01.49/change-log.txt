@@ -1,3 +1,7 @@
+# InvoiCy Framework v01.49.17
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Melhorias no tratamento de codificação de caracteres UTF-8 e ANSI, para permitir a impressão de caracteres acentuados;
+
 # InvoiCy Framework v01.49.16
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Passa a acatar os elementos xJust e dhCont do XML de entrada, quando informados pelo AC;
