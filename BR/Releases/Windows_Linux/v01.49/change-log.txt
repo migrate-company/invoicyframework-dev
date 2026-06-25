@@ -1,3 +1,7 @@
+# InvoiCy Framework v01.49.18
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Adição do tratamento para as formas de pagamento 23, 24 e 91 conforme especificado no Informe Técnico 2024.002 v1.10 e v1.11;
+
 # InvoiCy Framework v01.49.17
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Melhorias no tratamento de codificação de caracteres UTF-8 e ANSI, para permitir a impressão de caracteres acentuados;
