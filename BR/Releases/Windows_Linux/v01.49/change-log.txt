@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.49.19
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Adicionada validação do CNPJ na chamada de InvoiCyFramework_ConfiguraInvoicy. Caso o CNPJ informado seja inválido, os dados não serão salvos;
+02. Diversas melhorias relacionadas à alocação e liberação de memória;
+
 # InvoiCy Framework v01.49.18
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Adição do tratamento para as formas de pagamento 23, 24 e 91 conforme especificado no Informe Técnico 2024.002 v1.10 e v1.11;
