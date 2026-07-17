@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.49.20
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Implementação da NT 2025.002 v1.40;
+02. BR: Outras pequenas melhorias;
+
 # InvoiCy Framework v01.49.19
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Adicionada validação do CNPJ na chamada de InvoiCyFramework_ConfiguraInvoicy. Caso o CNPJ informado seja inválido, os dados não serão salvos;
