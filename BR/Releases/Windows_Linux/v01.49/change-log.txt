@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.49.21
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Passa a imprimir a quantidade do item no DANFE exatamente como foi informado no campo vUnCom do XML de entrada;
+02. BR: Outras pequenas melhorias;
+
 # InvoiCy Framework v01.49.20
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Implementação da NT 2025.002 v1.40;
