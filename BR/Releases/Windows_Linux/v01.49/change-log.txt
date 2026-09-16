@@ -1,3 +1,8 @@
+# InvoiCy Framework v01.49.23
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Implementação do tratamento para leitura e definição do sequencial de NFe através dos métodos InvoiCyFramework_ObtemUltimoSequencialDFe e InvoiCyFramework_DefineSequencialDFe;
+02. BR: Adição de gravação de log - lista de arquivos e propriedades;
+
 # InvoiCy Framework v01.49.22
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Implementação do DANFE simplificado tipo 2 NT 2026.002 e NT 2026.003;
@@ -59,7 +64,7 @@
 # InvoiCy Framework v01.49.10
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Ajuste no tempo da janela de sincronização de documentos emitidos em contingência de 60 para 10 segundos;
-02. BR: Remoção do sleep entre documentos da sincronização de documentos emitidos em contingência;
+02. BR: Remoção do sleep da sincronização de documentos emitidos em contingência;
 
 # InvoiCy Framework v01.49.09
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
