@@ -1,6 +1,20 @@
+# InvoiCy Framework v01.50.01
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Tratamento do cStat 120 - "Autorizado o uso da NF-e, com alerta", conforme definido na NT 2026.002 e o documento autorizado com alerta passa a ser reconhecido como emitido;
+
 # InvoiCy Framework v01.50.00
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. Implementado o recurso que permite atualização automática do InvoiCy Framework;
+
+# InvoiCy Framework v01.49.23
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Implementação do tratamento para leitura e definição do sequencial de NFe através dos métodos InvoiCyFramework_ObtemUltimoSequencialDFe e InvoiCyFramework_DefineSequencialDFe;
+02. BR: Adição de gravação de log - lista de arquivos e propriedades;
+
+# InvoiCy Framework v01.49.22
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Implementação do DANFE simplificado tipo 2 NT 2026.002 e NT 2026.003;
+02. BR: Outras pequenas melhorias;
 
 # InvoiCy Framework v01.49.21
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
