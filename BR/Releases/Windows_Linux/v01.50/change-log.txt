@@ -1,3 +1,17 @@
+# InvoiCy Framework v01.50.04
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Implementação da NT 2026.007 v1.10 - emissão de NF-e por contribuinte exclusivo do IBS/CBS (sem IE do emitente);
+02. BR: Implementação da NT 2026.008 v1.00 - Valor Líquido do Produto (vUnComLiq, vProdLiq e vProdLiqTot) e grupo ICMS Previsto no Pagamento Antecipado;
+03. BR: Calculadora de Tributos da RTC - leitura do retorno ajustada às modificações no layout de integração;
+04. BR: NF-e com DANFE Simplificado Tipo 2 passa a ser identificada somente pelo tpImp=6, conforme a NT 2026.002 (antes exigia também indPres=4);
+05. BR: NT 2023.002 v1.02 - fim do serviço de inutilização no AC, BA e SP;
+06. BR: Correção na consulta de documentos por faixa de numeração (NumeroInicial/NumeroFinal): o InvoiCy retornava todos os documentos, mas apenas o primeiro era devolvido à aplicação;
+07. BR: NT 2026.002 - contingência off-line (tpEmis=9) também para a NF-e com DANFE Simplificado Tipo 2 (tpImp=6), com o mesmo tratamento da NFC-e;
+08. BR: Correções na NF-e com DANFE Simplificado Tipo 2 e na NF-e em geral: o grupo infSuplem informado pelo AC passa a ser aceito com qualquer indPres (antes só com indPres=4); 
+        a instrução de substituição/descarte de uma NF-e enviada no layout InvoiCy passa a identificar o modelo como NFe (antes saía como NFCe); o retorno de contingência traz DocModelo=NFe;
+09. BR: Correção no retorno das funções que devolvem texto (EmiteDocumento, ObtemParametro, RelatorioPendentes, ExecuteCommand e demais): com chamadas simultâneas de mais de uma thread, 
+        a função podia devolver o retorno de outra chamada ou um conteúdo em montagem/liberado;
+
 # InvoiCy Framework v01.50.03
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Correção na aplicação da configuração de proxy nas comunicações;
@@ -14,6 +28,14 @@
 # InvoiCy Framework v01.50.00
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. Implementado o recurso que permite atualização automática do InvoiCy Framework;
+
+# InvoiCy Framework v01.49.25
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Passa a permitir o uso de série 0 até 889 conforme previsto no MOC 7.0 - Anexo I - Leiaute da NF-e/NFC-e;
+
+# InvoiCy Framework v01.49.24
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+01. BR: Tratamento do cStat 120 - "Autorizado o uso da NF-e, com alerta", conforme definido na NT 2026.002 e o documento autorizado com alerta passa a ser reconhecido como emitido;
 
 # InvoiCy Framework v01.49.23
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -81,7 +103,7 @@
 # InvoiCy Framework v01.49.10
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Ajuste no tempo da janela de sincronização de documentos emitidos em contingência de 60 para 10 segundos;
-02. BR: Remoção do sleep da sincronização de documentos emitidos em contingência;
+02. BR: Remoção do sleep entre documentos da sincronização de documentos emitidos em contingência;
 
 # InvoiCy Framework v01.49.09
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
