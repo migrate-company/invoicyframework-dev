@@ -1,5 +1,37 @@
 # Changelog
 
+## 0.1.2
+
+Correcao de um defeito que impedia QUALQUER configuracao no Android. Nenhuma
+mudanca na API Dart.
+
+- **`configuraInvoicy` falhava sempre no Android**, com
+  `ChamadaNativaException: configuraInvoicy devolveu 0 (o canal devolveu nulo)`.
+  O mesmo valia para `ambienteEmissao`, `configura`, `configuraDiretorio` e
+  `arquivoSistema` -- todas as operacoes sem retorno.
+
+  A causa estava em `impl_canal.dart`: um unico `_chama<T>` tratava retorno nulo
+  como erro sempre que `T != Null`, e para `T == void` esse teste da verdadeiro.
+  O shim Java responde `success(null)` para operacoes sem retorno, que e o
+  resultado correto delas -- quem confere o codigo da fachada Java e o `exigeUm`
+  do lado Java, que converte retorno != 1 em `PlatformException`.
+
+  O helper foi separado em dois: `_pede<T>` para quem espera valor (`versao`,
+  `emiteDocumento`), onde nulo continua sendo erro, e `_executa` para quem nao
+  espera. Quem chama declara o que quer, em vez de o codigo deduzir por
+  comparacao de tipo em tempo de execucao.
+
+- **AAR em 1.50.04.** A biblioteca Android foi renumerada para acompanhar a
+  versao do framework nativo, em vez de seguir uma serie propria. A codificacao
+  de `Versao()` continua a do desktop (introduzida na 1.40.16): `0x015004` vira
+  `15004`.
+
+- Novo `test/impl_canal_test.dart`, com o canal mockado, travando esse contrato:
+  operacao sem retorno aceita nulo, operacao com retorno o rejeita, e
+  `PlatformException` continua virando `ChamadaNativaException`. Era a lacuna que
+  deixou o defeito chegar ao cliente -- os testes cobriam a tabela de
+  capacidades e o trilho FFI, nunca a camada do canal.
+
 ## 0.1.1
 
 Correcao de empacotamento do Android. Nenhuma mudanca na API Dart.
