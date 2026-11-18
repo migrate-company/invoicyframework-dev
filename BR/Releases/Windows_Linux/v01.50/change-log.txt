@@ -1,3 +1,12 @@
+# InvoiCy Framework v01.50.05
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+01. BR: Passa a retornar 999-Rejeição: Empresa não configurada quando o XML de entrada tiver um CNPJ de emissor que não está configurado no FW;
+02. Correção de vazamento de memória na sincronização dos documentos emitidos em contingência;
+03. Novo parâmetro TEMPO_ENVIO_PENDENTES: duração, em segundos, da janela de envio de cada ciclo de sincronização dos pendentes (padrão 10, mínimo 3);
+04. Melhoria de desempenho na sincronização dos documentos emitidos em contingência: a listagem dos pendentes passa a calcular o hash só para os documentos enviados no ciclo;
+05. Melhoria na sincronização dos documentos emitidos em contingência: a listagem passa a ser ordenada pelo horário de criação dos arquivos, do mais antigo para o mais recente;
+
 # InvoiCy Framework v01.50.04
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 01. BR: Implementação da NT 2026.007 v1.10 - emissão de NF-e por contribuinte exclusivo do IBS/CBS (sem IE do emitente);
